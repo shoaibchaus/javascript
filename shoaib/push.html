@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>push array</title>
+</head>
+<body>
+	<p id="f"></p>
+
+	<button onclick="myFun()">try it!!</button>
+
+	<script>
+		
+var fruits=['banana','apple','mango','orange'];
+document.getElementById("f").innerHTML=fruits;
+function myFun(){
+	fruits.push("apple");
+	fruits.push("orange");
+	
+	document.getElementById("f").innerHTML=fruits;
+
+}
+
+
+
+	</script>
+
+</body>
+</html>

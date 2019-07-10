@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>foreach function</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+	var fruits,flen,text,i;
+	fruits=['banana','apple','mango','orange'];
+	//flen=fruits.length;
+	text="<ul>";
+	fruits.forEach(myFun);
+	text+="</ul>";
+document.getElementById("demo").innerHTML=text;
+
+	function myFun(value) {
+		// body...
+		text +="<li>"+value+"</li>";
+	}
+
+</script>
+
+
+</body>
+</html>
